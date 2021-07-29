@@ -13,8 +13,6 @@ def logo():
                  
     ''' + Style.RESET_ALL)
 
-#ci_session=ad0e6aefcc4c17c658638d4e4d45e13614c3171e exemple
-
 resp = ""
 
 def get_request():
