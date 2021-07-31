@@ -6,8 +6,8 @@ def logo():
     os.system("cls")
     print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + f'''
   _________  ________  ___ 
-  \_   ___ \ \_____  \|   |                  Made by n3k0girl | C++/html5/css3/js/ dev|
-  /    \  \/  /  ____/|   |                  
+  \_   ___ \ \_____  \|   |                  
+  /    \  \/  /  ____/|   |     
   \     \____/       \|   |                  Make your link faster with C2I
    \______  /\_______ \___|                            
                  
@@ -32,9 +32,9 @@ def bs4_links():
     soup = BeautifulSoup(resp, "html5lib")
     infos = soup.find_all("a")
     print("\n")
-    for lien in infos:
-        if "https://www.clictune.com/" in lien.text:
-            print(lien.attrs['href'])
+    for link in infos:
+        if "https://www.clictune.com/" in link.text:
+            print(link.attrs['href'])
 
 if  __name__ == '__main__':
     logo()
